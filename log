@@ -17,3 +17,9 @@ list.c:100:12: error: unused variable ‘newNodo’ [-Werror=unused-variable]
       |            ^~~~~~~
 cc1: all warnings being treated as errors
 36f40f3
+Fri Mar 27 05:54:03 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  12|0
+total_score: 60/60
+cd37786
