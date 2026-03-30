@@ -33,7 +33,6 @@ Node * createNode(void * data) {
 
 List * createList() {
     List * list = (List *)malloc(sizeof(List));
-    assert(list != NULL);
     list->head = NULL;
     list->tail = NULL;
     list->current = NULL;
@@ -98,14 +97,14 @@ void pushBack(List * list, void * data) {
 
 void pushCurrent(List * list, void * data) {
     Node* newNode = createNode(data); // Reservar memoria para crear el Nodo Nuevo
-    if (list->head == NULL) {           // si no hay datos en la lista se deja como el primero, el ultimo y el actual. Y retorna
+    if (list->head == NULL) {           // 
         list->head = newNode;
         list->tail = newNode;
         list->current = newNode;
         return;
     }
-    if (list->current == NULL) {       // si el actual es nulo o no existe, el nuevo es el primero y el actual, y el primero de antes 
-        newNode->next = list->head;    // ahora es el siguiente al nuevo que se agrego o segundo. Y retorna.
+    if (list->current == NULL) {       
+        newNode->next = list->head;    // 
         list->head->prev = newNode;
         list->head = newNode;
         list->current = newNode;
